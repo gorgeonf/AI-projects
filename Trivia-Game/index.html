@@ -1,0 +1,56 @@
+<!-- Homepage for a trivia game about machine learning
+    This game will display one multiple-choice question at a time, using JavaScript that gets data from data/trivia.js.
+    Possible answers will be displayed with radio buttons to their left.
+    When a radio button is clicked, the user will be shown a new random question.
+    The user will be able to see their score at the top of the page, which will be updated after each question is answered.
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">Trivia Game</h1>
+        <div id="start-screen" class="screen">
+            <h2>Select a theme</h2>
+            <div id="theme-buttons">
+                <button class="theme-button" data-theme="Biology">Biology</button>
+                <button class="theme-button" data-theme="Oceanography">Oceanography</button>
+                <button class="theme-button" data-theme="History">History</button>
+                <button class="theme-button" data-theme="Geography">Geography</button>
+                <button class="theme-button" data-theme="Physics">Physics</button>
+                <button class="theme-button" data-theme="Chemistry">Chemistry</button>
+                <button class="theme-button" data-theme="GIS">GIS</button>
+            </div>
+            <div id="questions-config" style="display: none; margin-top: 30px;">
+                <p>How many questions do you want?</p>
+                <input type="number" id="num-questions" min="1" max="100" value="10">
+                <button id="start-button" class="button">Start Game</button>
+            </div>
+        </div>
+        <div id="game-screen" class="screen" style="display: none;">
+            <div id="score">Score: 0/0</div>
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="answer-buttons">
+                    <!-- Buttons for answers will be dynamically generated here -->
+                </div>
+            </div>
+            <div id="game-controls" style="margin-top: 20px;">
+                <button id="stop-button" class="button">Stop Round</button>
+            </div>
+        </div>
+        <footer>
+            <p>Florian Gorgeon - 2026</p>
+        </footer>
+    </div>
+
+    <script src="data/triviaQuestions.js"></script>
+    <script src="js/trivia.js"></script>
+</body>
+</html>

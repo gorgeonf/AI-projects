@@ -1,0 +1,87 @@
+/*css file used for styling the Trivia Game application. It defines the layout, colors, fonts, and other visual elements to enhance the user experience.*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: #333;}
+ .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.button.correct {
+    background-color: #28a745;
+}
+.button.incorrect {
+    background-color: #dc3545;
+}
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+.screen {
+    text-align: center;
+    padding: 20px;
+}
+#start-screen input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#start-screen p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#theme-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.theme-button {
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.theme-button:hover {
+    background-color: #e0e0e0;
+    border-color: #007BFF;
+}
+.theme-button.selected {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+#questions-config {
+    text-align: center;
+}
+
+#game-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+#stop-button {
+    margin: 0;
+}
