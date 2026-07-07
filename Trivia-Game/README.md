@@ -1,6 +1,7 @@
 # Trivia Game
 
 A simple browser-based trivia game built with HTML, CSS, and JavaScript.
+Developed using AI-assisted pair programming with GitHub Copilot.
 
 ## Features
 
